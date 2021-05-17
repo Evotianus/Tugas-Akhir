@@ -47,7 +47,7 @@ $password_lama = $result['password'];
 				<input type="text" name="password" value="<?php echo $password_lama;?>">
 			</div>
 			<div class="button1 text-center">
-				<button>Sign In</button>
+				<button>Simpan</button>
 			</div>
 		</form>
 	</div>
