@@ -38,7 +38,7 @@ include "koneksi.php";
 	</div>
 
 	<div class="atass text-center">
-		<h1>KAMI ADA DISINI <br> UNTUK MU</h1>
+		<h1>Kami ada disini <br> Untuk mu</h1>
 	</div>
 		<?php
 	}
