@@ -31,7 +31,18 @@ $password_lama = $result['password'];
 	<div class="isi1 text-center">
 		<form action="userupdate.php" method="POST">
 			<div class="image text-center">
-				<img src="./image/<?php echo $profil_lama;?>" id="image_profile">
+				<?php
+					if($profil_lama == null) {
+				?>
+						<img src="./image/unknown_user.jpg" id="image_profile">
+				<?php
+					}
+					else {
+				?>
+						<img src="./image/<?php echo $profil_lama;?>" id="image_profile">
+				<?php
+					}
+				?>
 				<i><label class="fa fa-camera" for="upload-file"></label></i><input id="upload-file" name="image_profile" type="file" style="display: none"
 				onchange="UbhImg(this.value)">
 			</div>

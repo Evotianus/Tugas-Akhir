@@ -1,8 +1,6 @@
 <?php 
 session_start();
 include "koneksi.php";
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,7 +54,18 @@ $profile = $result['profile_image'];
 	<div id="mySidenav" class="sidenav"> <!-- ini sidebar -->
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="user.php">
-		 	<img src="./image/<?php echo $profile;?>">
+		<?php
+			if($profile == null) {
+		?>
+				<img src="./image/unknown_user.jpg" alt="">
+		<?php
+			}
+			else {
+		?>
+		 		<img src="./image/<?php echo $profile;?>" alt="./image/unknown_user.jpg">
+		<?php
+			}
+		?>
 			<i class="fa fa-pen edit"></i>
 		</a>
 		<a href="konseling.php"><i class="fa fa-heart edit1"></i>Konseling</a>
