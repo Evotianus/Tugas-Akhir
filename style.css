@@ -240,8 +240,8 @@ h5{
 
 .konseling{
 	margin: auto; 
- 	width: 400px;
- 	height: 420px;
+ 	width: 320px;
+ 	height: 340px;
 	padding: 20px;
 	box-shadow: 0px 5px 17px -2px rgba(0,0,0,0.30);
 	border-radius: 20px;
@@ -436,17 +436,6 @@ h5{
 	margin-bottom: 10px;
 }
 
-.btnbuat button{
-	color: white;
-	background-color: #00B4D8;
-	border-radius: 10px;
-	border:none;
-	width: 400px;;
-	height: 40px;
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
 .thumbnail{
 	background-color: #CAF0F8;
 	width: 100%;
@@ -458,4 +447,128 @@ h5{
 	border-radius: 10px;
 	width: 100px;
 	height: 30px;
+}
+
+.isiartikel{
+	margin-top: 20px;
+
+}
+
+.isiartikel .artikelnya{
+	width : 400px;
+	margin : auto;
+	overflow: hidden;
+	text-align: left;
+}
+
+.artikelnya img{
+	width: 100%;
+}
+
+.areasoal{
+	width : 300px;
+	margin: auto;
+}
+
+.progressoal h5{
+	text-align: left;
+	margin-bottom: 0;	
+}
+
+.areasoal .soal{
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.buttonpilihan input{
+	width: 100%;
+	margin-bottom: 15px;
+	border : 1px solid black;
+	background-color: transparent;
+	border-radius: 10px;
+	height: 40px;
+	font-size: 15px;
+}
+
+.soal .tombol{
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 700;
+	height: 30px;
+}
+
+.headerbackground{
+	max-width: 400px;
+}
+
+.headerbackground{
+	 width: 100%;
+  height: 400px;
+  background-image: url('./image/artikel.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.headerbackground h2{
+	padding-top: 140px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.detailartikel{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.detailartikel p {
+	font-size: 12px;
+	text-align: left;
+}
+
+.iklan{
+	background-color: #c4c4c4;
+	width: 340px;
+	height: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+}
+
+.publisher p{
+	font-size: 10px;
+	color: #68777A;
+	margin: 0;
+}
+
+.bagikan{
+	margin-top: 20px;
+}
+
+.bagikan h3{
+	text-align: left;
+	font-weight: 700;
+}
+
+.buttonartikel{
+	border-radius: 20px;
+	width: 80px;
+	margin-left: 20px;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+}
+
+.hasilquiz{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.hasilquiz p{
+	margin-top: 10px;
+	font-size: 15px;
 }
