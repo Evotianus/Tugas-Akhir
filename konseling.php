@@ -67,7 +67,7 @@ $profile = $result['profile_image'];
 
 	<div class="atas">
 		<i class="fa fa-bars" onclick="openNav()"></i>
-		<a href="home.php"><img src="./image/Logo.png"></a>
+		<a href="home2.php"><img src="./image/Logo.png"></a>
 	</div>
 		<?php
 	}

@@ -65,7 +65,7 @@ $profile = $result['profile_image'];
 
 	<div class="atas">
 		<i class="fa fa-bars" onclick="openNav()"></i>
-		<a href="home.php"><img src="./image/Logo.png"></a>
+		<a href="home2.php"><img src="./image/Logo.png"></a>
 	</div>
 		<?php
 	}
@@ -77,9 +77,8 @@ $profile = $result['profile_image'];
 
 	<div class="isi text-center">
 		<div class="motivasi">
-			<h2>Dialy Motivation</h2>
-			<h3 style="margin-top: 20px; width: 400px;">Don't compare yourself to other, <br> because you are perfect just the way you are <3</h3>
-			<h3 style="font-weight: 700; font-style: italic;">-Unknown</h3>
+			<h2>Daily Motivation</h2>
+			<h3 style="margin-top: 20px; width: 400px;" id="DaiMot"><a onclick="MintaPerm()">Tolong allow permission untuk mendapatkan notifikasi motivasi kami</a></h3>	
 			<img src="./image/motivasi.png">
 		</div>
 
@@ -125,4 +124,49 @@ $profile = $result['profile_image'];
 
 
 </body>
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+
+	function blmlogin() {
+		alert("Tolong Login Terlebih Dahulu");
+	}
+
+	const arrayMotivasi = ["Meraih cita-cita itu seperti pertempuran.", "Jangan mudah menilai buruk sebuah peristiwa.", "Sebuah kesuksesan berawal dari nol.", "Mulailah bangkit, kejar apa yang terbaik untuk dirimu", "Setiap kejadian pasti ada hikmah di baliknya."];
+
+	var RandNum = Math.floor(Math.random() * arrayMotivasi.length);
+
+	function munculNotif() {
+		const notif = new Notification("Daily Motivation", {
+			body: arrayMotivasi[RandNum]
+		});
+
+		document.getElementById("DaiMot").innerHTML = arrayMotivasi[RandNum];
+	}
+
+	if (Notification.permission !== "denied") {
+		Notification.requestPermission().then(permission => {
+			if (permission == "granted") {
+				munculNotif();
+			}
+
+			if (permission == "denied") {
+				document.getElementById("DaiMot").innerHTML = "Permission untuk daily motivation ditolak";
+			}
+		});
+	}
+
+	function MintaPerm() {
+		Notification.requestPermission().then(permission => {
+			if (permission == "granted") {
+				munculNotif();
+			}
+		});
+	}
+</script>
 </html>

@@ -27,6 +27,6 @@ if ($numrows == 0 || $numrows == null) {
     $_SESSION["email"] = $email;
     $_SESSION["password"] = $password;
 
-    header("location: home.php");
+    header("location: home2.php");
 }
 ?>
