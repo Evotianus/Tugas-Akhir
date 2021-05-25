@@ -15,7 +15,7 @@ $nama_pembuat = $_SESSION["nama"];
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/99d577495c.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Buat MeetingMu!</title>
+	<title>Buat MeetingMu</title>
 </head>
 <body>
 	<div class="buatmeeting text-center col-md-12">
