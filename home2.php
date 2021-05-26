@@ -87,19 +87,19 @@ $profile = $result['profile_image'];
 			<div class="isikonseling">
 				<div class="isi2 column">
 					<img src="./image/thumbnail.png">
-					<h3>Gimana cara menjawab quiz dengan cepat</h3>
+					<h3>Gimana cara menjawab quiz dengan cepat?</h3>
 					<h3 style="font-weight: 900; color: #03045E;">TODAY AT 13:00 WIB</h3>
 				</div>
 
 				<div class="isi2 column">
 					<img src="./image/thumbnail.png">
-					<h3>Gimana cara menjawab quiz dengan cepat</h3>
+					<h3>Gimana cara menjawab quiz dengan cepat?</h3>
 					<h3 style="font-weight: 900; color: #03045E;">TODAY AT 13:00 WIB</h3>
 				</div>
 
 				<div class="isi2 column">
 					<img src="./image/thumbnail.png">
-					<h3>Gimana cara menjawab quiz dengan cepat</h3>
+					<h3>Gimana cara menjawab quiz dengan cepat?</h3>
 					<h3 style="font-weight: 900; color: #03045E;">TODAY AT 13:00 WIB</h3>
 				</div>
 			</div>
