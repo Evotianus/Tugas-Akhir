@@ -106,6 +106,7 @@ $profile = $result['profile_image'];
 		</div>
 	</div>
 
+	//Ini bagian quiz
 	<div class="quiz text-center">
 		<h2 style="margin-top: 30px; margin-bottom: 20px;">Cobain Quiz Kita!</h2>
 			<div class="areaquiz" style="margin-bottom: 30px;">
